@@ -1,5 +1,5 @@
 FROM ruby:2.5-alpine3.8 as gems
-RUN gem install evt-message_store-postgres-database --install-dir /gems
+RUN gem install evt-message_store-postgres-database -v 1.0.0 --install-dir /gems
 
 ################################################################################
 FROM postgres:9.6-alpine
